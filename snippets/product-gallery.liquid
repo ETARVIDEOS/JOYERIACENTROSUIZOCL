@@ -61,7 +61,8 @@
 
                       <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
                         {%- assign zoom_width = media.width | at_most: 1600 -%}
-                        <img class="product-gallery__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-zoom="{{ media | img_url: zoom_width | append: 'x' }}" alt="{{ media_alt | escape }}">
+                        {%- capture zoom_size -%}{{ zoom_width }}x{%- endcapture -%}
+                        <img class="product-gallery__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-zoom="{{ media | img_url: zoom_size }}" alt="{{ media_alt | escape }}">
 
                         <noscript>
                           <img src="{{ media | img_url: '800x' }}" alt="{{ media_alt | escape }}">
