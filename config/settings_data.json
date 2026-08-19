@@ -452,6 +452,12 @@
           "button_text": "",
           "button_link": ""
         }
+      },
+      "static-recently-viewed-products": {
+        "type": "static-recently-viewed-products",
+        "settings": {
+          "title": "Vistos recientemente"
+        }
       }
     },
     "content_for_index": [
