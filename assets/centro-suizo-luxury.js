@@ -29,3 +29,39 @@
     });
   });
 })();
+
+/* CENTRO SUIZO — sincroniza el dropdown de categorias (value-picker) con el <select> real de busqueda */
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('click', function (event) {
+      var choice = event.target.closest('[data-cs-category-value]');
+      if (!choice) return;
+
+      var wrapper = choice.closest('.cs-category-picker');
+      if (!wrapper) return;
+
+      var select = wrapper.querySelector('select');
+      var label = wrapper.querySelector('[data-cs-category-label]');
+      var value = choice.getAttribute('data-cs-category-value');
+
+      if (select) {
+        select.value = value;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+
+      if (label) {
+        label.textContent = choice.textContent.trim();
+      }
+
+      wrapper.querySelectorAll('[data-cs-category-value]').forEach(function (item) {
+        item.classList.remove('is-selected');
+        item.removeAttribute('aria-current');
+      });
+      choice.classList.add('is-selected');
+      choice.setAttribute('aria-current', 'true');
+
+      var closeButton = wrapper.querySelector('[data-action="close-value-picker"]');
+      if (closeButton) closeButton.click();
+    });
+  });
+})();

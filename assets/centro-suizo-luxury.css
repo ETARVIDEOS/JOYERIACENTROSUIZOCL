@@ -119,6 +119,11 @@ textarea:focus-visible {
   transition: color 0.3s ease;
 }
 
+/* ── Precios alineados: reservar 2 lineas de titulo siempre ── */
+.product-item__title {
+  min-height: 3.1em;
+}
+
 .product-item:hover .product-item__info-inner > a:first-child {
   color: var(--cs-gold);
 }

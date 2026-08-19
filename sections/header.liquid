@@ -107,12 +107,37 @@
                 {%- endfor -%}
 
                 {%- if section.settings.show_search_filter and has_at_least_one_type -%}
-                  <div class="search-bar__filter">
-                    <label for="search-product-type" class="search-bar__filter-label">
-                      <span class="search-bar__filter-active">{{ 'header.search.all_categories' | t }}</span> {%- render 'icon', icon: 'arrow-bottom' -%}
-                    </label>
+                  <div class="search-bar__filter value-picker-wrapper cs-category-picker">
+                    <button type="button" class="search-bar__filter-label select-button" aria-haspopup="true" aria-expanded="false" aria-controls="search-category-picker" data-action="open-value-picker">
+                      <span class="search-bar__filter-active" data-cs-category-label>{{ 'header.search.all_categories' | t }}</span> {%- render 'icon', icon: 'arrow-bottom' -%}
+                    </button>
 
-                    <select id="search-product-type">
+                    <div id="search-category-picker" class="value-picker value-picker--small" data-picker-position="bottom" aria-hidden="true">
+                      {% render 'icon', icon: 'nav-triangle-borderless' %}
+
+                      <div class="value-picker__inner">
+                        <header class="value-picker__header">
+                          <span class="value-picker__title text--strong">{{ 'header.search.all_categories' | t }}</span>
+                          <button type="button" class="value-picker__close" data-action="close-value-picker" aria-controls="search-category-picker" aria-label="{{ 'general.accessibility.close' | t }}">{% render 'icon', icon: 'close' %}</button>
+                        </header>
+
+                        <ul class="value-picker__choice-list">
+                          <li class="value-picker__choice-list-item">
+                            <button type="button" class="value-picker__choice-item is-selected" data-cs-category-value="" aria-current="true">{{ 'header.search.all_categories' | t }} {%- render 'icon', icon: 'check-2' -%}</button>
+                          </li>
+
+                          {%- for product_type in shop.types -%}
+                            {%- if product_type != blank -%}
+                              <li class="value-picker__choice-list-item">
+                                <button type="button" class="value-picker__choice-item" data-cs-category-value="{{ product_type | escape }}">{{ product_type | escape }} {%- render 'icon', icon: 'check-2' -%}</button>
+                              </li>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <select id="search-product-type" class="visually-hidden" tabindex="-1" aria-hidden="true">
                       <option value="" selected="selected">{{ 'header.search.all_categories' | t }}</option>
 
                       {%- for product_type in shop.types -%}
