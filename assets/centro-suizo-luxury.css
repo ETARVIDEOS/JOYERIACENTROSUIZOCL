@@ -29,6 +29,17 @@
   overflow: hidden;
 }
 
+/* ── Selects nativos: quitar el azul del sistema, usar dorado ── */
+select {
+  accent-color: var(--cs-gold);
+}
+
+select option:checked,
+select option:hover {
+  background: var(--cs-gold) linear-gradient(0deg, var(--cs-gold) 0%, var(--cs-gold) 100%);
+  color: var(--cs-dark);
+}
+
 /* ── Foco de teclado visible (accesibilidad) ───────────────── */
 a:focus-visible,
 button:focus-visible,
