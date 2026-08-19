@@ -30,28 +30,64 @@
   });
 })();
 
-/* CENTRO SUIZO — sincroniza el dropdown de categorias (value-picker) con el <select> real de busqueda */
+/* CENTRO SUIZO — dropdown de categorias del buscador, autocontenido.
+   El tema no maneja value-picker de forma generica: cada dropdown se
+   registra a mano por ID en su seccion (footer, ordenar, etc). En vez de
+   tocar theme.min.js, replicamos aca el mismo abrir/cerrar. */
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
+    var wrapper = document.querySelector('.cs-category-picker');
+    if (!wrapper) return;
+
+    var trigger = wrapper.querySelector('[data-action="open-value-picker"]');
+    var picker = wrapper.querySelector('.value-picker');
+    var closeBtn = wrapper.querySelector('[data-action="close-value-picker"]');
+    var select = wrapper.querySelector('select');
+    var label = wrapper.querySelector('[data-cs-category-label]');
+    if (!trigger || !picker) return;
+
+    function open() {
+      trigger.setAttribute('aria-expanded', 'true');
+      picker.setAttribute('aria-hidden', 'false');
+    }
+
+    function close() {
+      trigger.setAttribute('aria-expanded', 'false');
+      picker.setAttribute('aria-hidden', 'true');
+    }
+
+    trigger.addEventListener('click', function (event) {
+      event.stopPropagation();
+      if (picker.getAttribute('aria-hidden') === 'false') {
+        close();
+      } else {
+        open();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function (event) {
+        event.stopPropagation();
+        close();
+      });
+    }
+
     document.addEventListener('click', function (event) {
+      if (picker.getAttribute('aria-hidden') === 'false' && !wrapper.contains(event.target)) {
+        close();
+      }
+    });
+
+    wrapper.addEventListener('click', function (event) {
       var choice = event.target.closest('[data-cs-category-value]');
       if (!choice) return;
 
-      var wrapper = choice.closest('.cs-category-picker');
-      if (!wrapper) return;
-
-      var select = wrapper.querySelector('select');
-      var label = wrapper.querySelector('[data-cs-category-label]');
       var value = choice.getAttribute('data-cs-category-value');
-
       if (select) {
         select.value = value;
         select.dispatchEvent(new Event('change', { bubbles: true }));
       }
-
-      if (label) {
-        label.textContent = choice.textContent.trim();
-      }
+      if (label) label.textContent = choice.textContent.trim();
 
       wrapper.querySelectorAll('[data-cs-category-value]').forEach(function (item) {
         item.classList.remove('is-selected');
@@ -60,8 +96,7 @@
       choice.classList.add('is-selected');
       choice.setAttribute('aria-current', 'true');
 
-      var closeButton = wrapper.querySelector('[data-action="close-value-picker"]');
-      if (closeButton) closeButton.click();
+      close();
     });
   });
 })();
