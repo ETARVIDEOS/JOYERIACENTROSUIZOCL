@@ -1,0 +1,138 @@
+/* ============================================================
+   CENTRO SUIZO — Capa de pulido de lujo
+   Transiciones, hover states y micro-interacciones.
+   Se carga DESPUES de theme.css para que estas reglas ganen
+   por orden de cascada sin necesitar !important.
+   ============================================================ */
+
+:root {
+  --cs-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --cs-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --cs-gold: #C8A84B;
+  --cs-gold-light: #E2C878;
+  --cs-dark: #080809;
+}
+
+/* ── Foco de teclado visible (accesibilidad) ───────────────── */
+a:focus-visible,
+button:focus-visible,
+.button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 1.5px solid var(--cs-gold);
+  outline-offset: 3px;
+}
+
+/* ── Botones: elevacion sutil + resplandor dorado ──────────── */
+.button {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: transform 0.3s var(--cs-ease-out),
+              box-shadow 0.3s var(--cs-ease-out),
+              background 0.3s var(--cs-ease-out),
+              color 0.3s var(--cs-ease-out);
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -8px rgba(200, 168, 75, 0.45);
+}
+
+.button--primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.button--secondary:hover,
+.button--ternary:hover {
+  transform: translateY(-1px);
+}
+
+/* ── Enlaces de navegacion: subrayado que se dibuja ────────── */
+.header__linklist > li > a,
+.header__inline-menu > li > a {
+  position: relative;
+}
+
+.header__linklist > li > a::after,
+.header__inline-menu > li > a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -2px;
+  height: 1px;
+  background: var(--cs-gold);
+  transition: left 0.3s var(--cs-ease-out), right 0.3s var(--cs-ease-out);
+}
+
+.header__linklist > li > a:hover::after,
+.header__inline-menu > li > a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* ── Tarjetas de producto: reveal lento, elevacion, precio dorado ── */
+.product-item__image-wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.product-item__primary-image,
+.product-item__secondary-image {
+  transition: transform 0.7s var(--cs-ease-out), opacity 0.5s ease !important;
+}
+
+.product-item:hover .product-item__primary-image {
+  transform: scale(1.045);
+}
+
+.product-item__info-inner a {
+  transition: color 0.3s ease;
+}
+
+.product-item:hover .product-item__info-inner > a:first-child {
+  color: var(--cs-gold);
+}
+
+.product-item {
+  transition: transform 0.4s var(--cs-ease-out);
+}
+
+/* ── Colecciones destacadas: overlay + escala en hover ─────── */
+.collection-item__image,
+.collection-list__item img {
+  transition: transform 0.8s var(--cs-ease-out);
+}
+
+.collection-list__item:hover img,
+.collection-item:hover .collection-item__image {
+  transform: scale(1.06);
+}
+
+/* ── Revelado suave al hacer scroll ─────────────────────────── */
+.cs-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s var(--cs-ease-out), transform 0.8s var(--cs-ease-out);
+}
+
+.cs-reveal.cs-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Respeta la preferencia de movimiento reducido ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .cs-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

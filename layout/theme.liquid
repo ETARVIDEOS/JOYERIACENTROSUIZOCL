@@ -41,6 +41,7 @@
     {{ content_for_header }}
 
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'centro-suizo-luxury.css' | asset_url }}">
 
     {% render 'microdata-schema' %}
 
@@ -138,5 +139,7 @@
 
     {% section 'text-with-icons' %}
     {% section 'footer' %}
+
+    <script src="{{ 'centro-suizo-luxury.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
