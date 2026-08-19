@@ -62,7 +62,10 @@
                    src="{{ section.settings.logo | img_url: image_size, scale: 2 }}"
                    alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
             {%- else -%}
-              <span class="header__logo-text">{{ shop.name }}</span>
+              {%- comment -%} Logo provisorio de Centro Suizo empaquetado en el tema. Reemplazar por section.settings.logo cuando se suba el logo oficial (fondo transparente) en Shopify Admin. {%- endcomment -%}
+              <img class="header__logo-image header__logo-image--bundled"
+                   src="{{ 'logo-centro-suizo.jpg' | asset_url }}"
+                   alt="{{ shop.name | default: 'Centro Suizo' | escape }}">
             {%- endif -%}
           </a>
         {%- endcapture -%}
@@ -468,6 +471,22 @@
       }
     }
   {%- endif -%}
+
+  .header__logo-image--bundled {
+    height: 44px;
+    width: auto;
+    max-width: none;
+    display: block;
+    transition: opacity 0.25s ease;
+  }
+  .header__logo-image--bundled:hover {
+    opacity: 0.85;
+  }
+  @media screen and (min-width: 641px) {
+    .header__logo-image--bundled {
+      height: 56px;
+    }
+  }
 </style>
 
 <script>
