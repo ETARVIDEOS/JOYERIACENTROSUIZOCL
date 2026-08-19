@@ -284,7 +284,7 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "title": "Recently viewed"
+          "title": "Vistos recientemente"
         }
       },
       "product-template": {
@@ -298,12 +298,15 @@
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "tab_page_3_handle": "",
-          "custom_security_badge": ""
+          "custom_security_badge": "",
+          "trust_title": "Pago y Seguridad"
         }
       },
       "product-recommendations": {
         "type": "product-recommendations",
-        "settings": {}
+        "settings": {
+          "heading": "Tambien te puede gustar"
+        }
       },
       "announcement-bar": {
         "type": "announcement-bar",

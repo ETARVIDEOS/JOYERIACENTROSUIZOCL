@@ -88,6 +88,7 @@
         select.dispatchEvent(new Event('change', { bubbles: true }));
       }
       if (label) label.textContent = choice.textContent.trim();
+      wrapper.setAttribute('data-cs-selected-handle', choice.getAttribute('data-cs-category-handle') || '');
 
       wrapper.querySelectorAll('[data-cs-category-value]').forEach(function (item) {
         item.classList.remove('is-selected');
@@ -98,5 +99,20 @@
 
       close();
     });
+
+    /* Si eligen una categoria pero no escriben texto, no tiene sentido
+       mandarlos a una pagina de busqueda vacia -- los llevamos directo
+       a la Coleccion real. */
+    var searchForm = wrapper.closest('form.search-bar');
+    var searchInput = searchForm ? searchForm.querySelector('.search-bar__input') : null;
+    if (searchForm && searchInput) {
+      searchForm.addEventListener('submit', function (event) {
+        var handle = wrapper.getAttribute('data-cs-selected-handle');
+        if (searchInput.value.trim() === '' && handle) {
+          event.preventDefault();
+          window.location.href = '/collections/' + handle;
+        }
+      });
+    }
   });
 })();

@@ -123,13 +123,17 @@
 
                         <ul class="value-picker__choice-list">
                           <li class="value-picker__choice-list-item">
-                            <button type="button" class="value-picker__choice-item is-selected" data-cs-category-value="" aria-current="true">{{ 'header.search.all_categories' | t }} {%- render 'icon', icon: 'check-2' -%}</button>
+                            <button type="button" class="value-picker__choice-item is-selected" data-cs-category-value="" data-cs-category-handle="all" aria-current="true">{{ 'header.search.all_categories' | t }} {%- render 'icon', icon: 'check-2' -%}</button>
                           </li>
 
                           {%- for product_type in shop.types -%}
                             {%- if product_type != blank -%}
+                              {%- assign category_handle = product_type | handleize -%}
+                              {%- if product_type == 'Anillos Amplia Variedad' -%}
+                                {%- assign category_handle = 'anillos' -%}
+                              {%- endif -%}
                               <li class="value-picker__choice-list-item">
-                                <button type="button" class="value-picker__choice-item" data-cs-category-value="{{ product_type | escape }}">{{ product_type | escape }} {%- render 'icon', icon: 'check-2' -%}</button>
+                                <button type="button" class="value-picker__choice-item" data-cs-category-value="{{ product_type | escape }}" data-cs-category-handle="{{ category_handle }}">{{ product_type | escape }} {%- render 'icon', icon: 'check-2' -%}</button>
                               </li>
                             {%- endif -%}
                           {%- endfor -%}
