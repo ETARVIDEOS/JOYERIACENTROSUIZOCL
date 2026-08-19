@@ -11,6 +11,22 @@
   --cs-gold: #C8A84B;
   --cs-gold-light: #E2C878;
   --cs-dark: #080809;
+  --cs-radius: 3px;
+}
+
+/* ── Lineas delicadas: esquinas suavizadas en vez de cuadradas ── */
+.button,
+.form__field,
+.product-item__image-wrapper,
+.aspect-ratio,
+.slideshow__bundled-image,
+.newsletter__form .form__field,
+.footer__newsletter-form .form__field {
+  border-radius: var(--cs-radius);
+}
+
+.aspect-ratio {
+  overflow: hidden;
 }
 
 /* ── Foco de teclado visible (accesibilidad) ───────────────── */

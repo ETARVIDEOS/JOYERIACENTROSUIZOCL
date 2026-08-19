@@ -588,4 +588,21 @@
         <path d="M12 8c-1.5-4-6-4-6-1s3 1 6 1c3 0 6 2 6-1s-4.5-3-6 1Z" stroke="{{ settings.accent_color }}"></path>
       </g>
     </svg>
+
+  {%- when 'cs-loupe' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="10" cy="10" r="7" stroke="{{ settings.heading_color }}"></circle>
+        <path d="M15.2 15.2 21 21" stroke="{{ settings.heading_color }}"></path>
+        <path d="M10 6.5 12 9l-2 5.5-2-5.5 2-2.5Z" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
+
+  {%- when 'cs-boutique' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7Z" stroke="{{ settings.heading_color }}"></path>
+        <path d="M12 6.5 14.5 9.5 12 14l-2.5-4.5L12 6.5Z" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
 {%- endcase -%}

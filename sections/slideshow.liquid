@@ -66,9 +66,9 @@
         {%- capture slide_inner -%}
           <div class="slideshow__slide-inner slideshow__slide-inner--{{ block.settings.content_position | replace: '_', '-' }} {% if block.settings.image %}lazyload image--fade-in{% else %}slideshow__slide-inner--bundled{% endif %}" {% if block.settings.image and section.settings.section_size != 'preserve_ratio' %}data-bgset="{{ bgset }}" data-optimumx="1.4" data-sizes="auto"{% endif %}>
             {%- unless block.settings.image -%}
-              {%- comment -%} Hero provisorio de Centro Suizo empaquetado en el tema. Reemplazar por block.settings.image/mobile_image cuando se suban las fotos oficiales en Shopify Admin. {%- endcomment -%}
-              <img class="slideshow__bundled-image hidden-phone" src="{{ 'hero-desktop.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}">
-              <img class="slideshow__bundled-image hidden-tablet-and-up" src="{{ 'hero-mobile.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}">
+              {%- comment -%} Hero provisorio de Centro Suizo, subido a Shopify Files. Reemplazar por block.settings.image/mobile_image cuando se elija la foto definitiva en Shopify Admin. {%- endcomment -%}
+              <img class="slideshow__bundled-image hidden-phone" src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-desktop-full.jpg" alt="{{ block.settings.title | escape }}">
+              <img class="slideshow__bundled-image hidden-tablet-and-up" src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-mobile-full.jpg" alt="{{ block.settings.title | escape }}">
             {%- endunless -%}
 
             {%- if block.settings.image and section.settings.section_size == 'preserve_ratio' -%}
