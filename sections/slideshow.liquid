@@ -64,17 +64,11 @@
         {%- endif -%}
 
         {%- capture slide_inner -%}
-          <div class="slideshow__slide-inner slideshow__slide-inner--{{ block.settings.content_position | replace: '_', '-' }} lazyload image--fade-in" {% if block.settings.image and section.settings.section_size != 'preserve_ratio' %}data-bgset="{{ bgset }}" data-optimumx="1.4" data-sizes="auto"{% endif %}>
+          <div class="slideshow__slide-inner slideshow__slide-inner--{{ block.settings.content_position | replace: '_', '-' }} {% if block.settings.image %}lazyload image--fade-in{% else %}slideshow__slide-inner--bundled{% endif %}" {% if block.settings.image and section.settings.section_size != 'preserve_ratio' %}data-bgset="{{ bgset }}" data-optimumx="1.4" data-sizes="auto"{% endif %}>
             {%- unless block.settings.image -%}
-              {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
-
-              {%- if section.settings.section_size == 'preserve_ratio' -%}
-                {{- placeholder | placeholder_svg_tag: 'slideshow__image-placeholder' -}}
-              {%- else -%}
-                <div class="slideshow__placeholder">
-                  {{- placeholder | placeholder_svg_tag: 'slideshow__image-placeholder' -}}
-                </div>
-              {%- endif -%}
+              {%- comment -%} Hero provisorio de Centro Suizo empaquetado en el tema. Reemplazar por block.settings.image/mobile_image cuando se suban las fotos oficiales en Shopify Admin. {%- endcomment -%}
+              <img class="slideshow__bundled-image hidden-phone" src="{{ 'hero-desktop.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}">
+              <img class="slideshow__bundled-image hidden-tablet-and-up" src="{{ 'hero-mobile.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}">
             {%- endunless -%}
 
             {%- if block.settings.image and section.settings.section_size == 'preserve_ratio' -%}

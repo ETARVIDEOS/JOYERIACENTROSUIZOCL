@@ -102,13 +102,25 @@ textarea:focus-visible {
 
 /* ── Colecciones destacadas: overlay + escala en hover ─────── */
 .collection-item__image,
-.collection-list__item img {
+.collection-list__item img,
+.collection-item .aspect-ratio img {
   transition: transform 0.8s var(--cs-ease-out);
 }
 
 .collection-list__item:hover img,
-.collection-item:hover .collection-item__image {
+.collection-item:hover .collection-item__image,
+.collection-item:hover .aspect-ratio img {
   transform: scale(1.06);
+}
+
+/* ── Hero empaquetado en el tema (fallback sin foto en Admin) ── */
+.slideshow__bundled-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 /* ── Revelado suave al hacer scroll ─────────────────────────── */

@@ -16,7 +16,7 @@
           {%- for block in section.blocks -%}
             {%- assign collection = collections[block.settings.collection] -%}
 
-          <a href="{{ collection.url | default: '#' }}" class="collection-item" data-collection-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+          <a href="{{ collection.url | default: 'shopify://collections/all' }}" class="collection-item" data-collection-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             {%- unless collection.empty? -%}
             {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
@@ -37,13 +37,36 @@
               <span class="collection-item__title text--strong">{{ collection.title }} {% render 'icon', icon: 'tail-right' %}</span>
             {%- endif -%}
           {%- else -%}
+            {%- comment -%} Categorias provisorias de Centro Suizo empaquetadas en el tema. Reemplazar cuando existan Colecciones reales en Shopify Admin (asignar en block.settings.collection). {%- endcomment -%}
+            {%- case forloop.index0 -%}
+              {%- when 0 -%}
+                {%- assign bundled_image = 'categoria-aros-bebe.jpg' -%}
+                {%- assign bundled_title = 'Aros de Bebé' -%}
+              {%- when 1 -%}
+                {%- assign bundled_image = 'categoria-anillos-compromiso.jpg' -%}
+                {%- assign bundled_title = 'Anillos de Compromiso' -%}
+              {%- when 2 -%}
+                {%- assign bundled_image = 'categoria-anillos-variedad.jpg' -%}
+                {%- assign bundled_title = 'Anillos' -%}
+              {%- when 3 -%}
+                {%- assign bundled_image = 'categoria-argollas-matrimonio.jpg' -%}
+                {%- assign bundled_title = 'Argollas de Matrimonio' -%}
+              {%- when 4 -%}
+                {%- assign bundled_image = 'categoria-colgantes.jpg' -%}
+                {%- assign bundled_title = 'Colgantes' -%}
+              {%- when 5 -%}
+                {%- assign bundled_image = 'categoria-anillos-diamantes.jpg' -%}
+                {%- assign bundled_title = 'Anillos con Diamantes' -%}
+            {%- endcase -%}
+
             <div class="collection-item__image-wrapper {% if section.settings.round_images %}collection-item__image-wrapper--rounded{% endif %}">
-              {%- capture placeholder -%}{% cycle 'collection-1', 'collection-2', 'collection-3', 'collection-4', 'collection-5', 'collection-6' %}{%- endcapture -%}
-              {{- placeholder | placeholder_svg_tag: 'placeholder-svg' -}}
+              <div class="aspect-ratio" style="padding-bottom: 100%">
+                <img class="collection-item__bundled-image" src="{{ bundled_image | asset_url }}" alt="{{ bundled_title | escape }}">
+              </div>
             </div>
 
             {%- if section.settings.show_collection_title -%}
-              <span class="collection-item__title text--strong">{{ 'home_page.onboarding.collection_title' | t }} {% render 'icon', icon: 'tail-right' %}</span>
+              <span class="collection-item__title text--strong">{{ bundled_title }} {% render 'icon', icon: 'tail-right' %}</span>
             {%- endif -%}
           {%- endunless -%}
             </a>
