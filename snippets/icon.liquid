@@ -543,4 +543,49 @@
         <path d="M6 0h6M9 0v1" stroke="{{ settings.accent_color }}"></path>
       </g>
     </svg>
+
+  {%- comment -%} ICONOS DE JOYERIA — Centro Suizo {%- endcomment -%}
+
+  {%- when 'cs-ring' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 3h6l2 4-5 5-5-5 2-4Z" stroke="{{ settings.accent_color }}"></path>
+        <circle cx="12" cy="16" r="5" stroke="{{ settings.heading_color }}"></circle>
+      </g>
+    </svg>
+
+  {%- when 'cs-necklace' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4c0 6 3.5 10 8 10s8-4 8-10" stroke="{{ settings.heading_color }}"></path>
+        <path d="M12 14v3" stroke="{{ settings.heading_color }}"></path>
+        <path d="M9.5 20 12 22l2.5-2-1-3.5h-3Z" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
+
+  {%- when 'cs-gem' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 9h20" stroke="{{ settings.heading_color }}"></path>
+        <path d="M10.5 3 8 9l4 13 4-13-2.5-6" stroke="{{ settings.heading_color }}"></path>
+        <path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
+
+  {%- when 'cs-shield-gem' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3Z" stroke="{{ settings.heading_color }}"></path>
+        <path d="m9 12 2 2 4-4" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
+
+  {%- when 'cs-gift' -%}
+    <svg viewBox="0 0 24 24" role="presentation">
+      <g fill="none" stroke-width="{{ stroke_width | default: 2 }}" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="8" width="18" height="4" stroke="{{ settings.heading_color }}"></rect>
+        <path d="M12 8v13M5 12v9h14v-9" stroke="{{ settings.heading_color }}"></path>
+        <path d="M12 8c-1.5-4-6-4-6-1s3 1 6 1c3 0 6 2 6-1s-4.5-3-6 1Z" stroke="{{ settings.accent_color }}"></path>
+      </g>
+    </svg>
 {%- endcase -%}
