@@ -67,8 +67,16 @@
           <div class="slideshow__slide-inner slideshow__slide-inner--{{ block.settings.content_position | replace: '_', '-' }} {% if block.settings.image %}lazyload image--fade-in{% else %}slideshow__slide-inner--bundled{% endif %}" {% if block.settings.image and section.settings.section_size != 'preserve_ratio' %}data-bgset="{{ bgset }}" data-optimumx="1.4" data-sizes="auto"{% endif %}>
             {%- unless block.settings.image -%}
               {%- comment -%} Hero provisorio de Centro Suizo, subido a Shopify Files. Reemplazar por block.settings.image/mobile_image cuando se elija la foto definitiva en Shopify Admin. {%- endcomment -%}
-              <img class="slideshow__bundled-image hidden-phone" src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-desktop-full.jpg" alt="{{ block.settings.title | escape }}">
-              <img class="slideshow__bundled-image hidden-tablet-and-up" src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-mobile-full.jpg" alt="{{ block.settings.title | escape }}">
+              {%- case forloop.index0 -%}
+                {%- when 1 -%}
+                  {%- assign bundled_desktop = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-2-desktop-full.jpg' -%}
+                  {%- assign bundled_mobile = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-2-mobile-full.jpg' -%}
+                {%- else -%}
+                  {%- assign bundled_desktop = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-desktop-full.jpg' -%}
+                  {%- assign bundled_mobile = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/hero-mobile-full.jpg' -%}
+              {%- endcase -%}
+              <img class="slideshow__bundled-image hidden-phone" src="{{ bundled_desktop }}" alt="{{ block.settings.title | escape }}">
+              <img class="slideshow__bundled-image hidden-tablet-and-up" src="{{ bundled_mobile }}" alt="{{ block.settings.title | escape }}">
             {%- endunless -%}
 
             {%- if block.settings.image and section.settings.section_size == 'preserve_ratio' -%}
