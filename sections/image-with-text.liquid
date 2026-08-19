@@ -14,9 +14,9 @@
             </noscript>
           </div>
         {%- elsif section.id == 'nuestra-historia' -%}
-          {%- comment -%} Foto real de la tienda Arica 1, subida a Shopify Files. Reemplazar por section.settings.image cuando se elija la foto definitiva en Admin. {%- endcomment -%}
+          {%- comment -%} Foto real de la tienda Iquique, subida a Shopify Files. Reemplazar por section.settings.image cuando se elija la foto definitiva en Admin. {%- endcomment -%}
           <div class="aspect-ratio" style="padding-bottom: 66.7%">
-            <img src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/tienda-arica1-fachada.jpg" alt="{{ section.settings.title | escape }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+            <img src="https://cdn.shopify.com/s/files/1/1066/7517/5505/files/tienda-iquique-frontis.jpg" alt="{{ section.settings.title | escape }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
           </div>
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
