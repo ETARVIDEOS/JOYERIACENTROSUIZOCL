@@ -418,12 +418,25 @@
           "background": "#111114",
           "text": "#F0EAE0"
         }
+      },
+      "nuestra-historia": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "",
+          "image_position": "left",
+          "image_width": 50,
+          "title": "MAS DE 45 ANOS TRABAJANDO EL ORO",
+          "content": "<p>Cada pieza de Centro Suizo nace en oro 18 quilates: una aleación de 75% oro puro con cobre, plata y paladio que le da su brillo cálido y la resistencia para durar toda la vida.</p><p>Fundición, pulido y control de calidad — cada joya pasa por manos expertas antes de llevar nuestro sello, conservando su pureza, su peso exacto y su autenticidad de 18K.</p><p>El valor no está solo en el oro. Está en el arte, la precisión y la confianza que ponemos en cada pieza desde 1979.</p>",
+          "button_text": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "text-with-icons",
       "collection-list",
+      "nuestra-historia",
       "1542984811767",
       "featured-product",
       "1542984842027"
