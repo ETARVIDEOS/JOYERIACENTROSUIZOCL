@@ -495,6 +495,53 @@
         "settings": {
           "show_section": true
         }
+      },
+      "nuestras-tiendas": {
+        "type": "map",
+        "blocks": {
+          "store-iquique": {
+            "type": "store",
+            "settings": {
+              "title": "Centro Suizo Iquique — Nueva tienda",
+              "address": "<p>Almirante Latorre 708, Iquique</p><p>+56 9 3192 2053</p>",
+              "hours": "",
+              "map_address": "Almirante Latorre 708, Iquique"
+            }
+          },
+          "store-arica-1": {
+            "type": "store",
+            "settings": {
+              "title": "Centro Suizo Arica — Casa Matriz",
+              "address": "<p>Arturo Prat 478, Arica</p>",
+              "hours": "",
+              "map_address": "Arturo Prat 478, Arica"
+            }
+          },
+          "store-arica-2": {
+            "type": "store",
+            "settings": {
+              "title": "Centro Suizo Arica — Galería 18 de Septiembre",
+              "address": "<p>18 de Septiembre 172, Local 3, Arica</p><p>+56 9 6350 2098</p>",
+              "hours": "",
+              "map_address": "18 de Septiembre 172, Arica"
+            }
+          }
+        },
+        "block_order": [
+          "store-iquique",
+          "store-arica-1",
+          "store-arica-2"
+        ],
+        "settings": {
+          "title": "Nuestras Tiendas",
+          "map_link_label": "Cómo llegar",
+          "api_key": "",
+          "zoom": 15,
+          "draggable_map": false,
+          "show_map_controls": false,
+          "map_style": "standard",
+          "image": ""
+        }
       }
     },
     "content_for_index": [
@@ -505,6 +552,7 @@
       "nuestra-historia",
       "orfebreria",
       "resenas-clientes",
+      "nuestras-tiendas",
       "featured-product",
       "1542984842027"
     ],
