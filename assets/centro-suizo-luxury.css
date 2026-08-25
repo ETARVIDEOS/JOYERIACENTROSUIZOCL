@@ -11,7 +11,12 @@
   --cs-gold: #C8A84B;
   --cs-gold-light: #E2C878;
   --cs-dark: #080809;
-  --cs-radius: 3px;
+  --cs-radius: 8px;
+  --cs-radius-lg: 15px;
+  --cs-radius-pill: 999px;
+  --cs-card-border: rgba(200, 168, 75, 0.35);
+  --cs-card-shadow: 0 8px 22px rgba(26, 26, 26, 0.07);
+  --cs-card-shadow-soft: 0 2px 8px rgba(26, 26, 26, 0.05);
 }
 
 /* ── Barra de beneficios (estilo Aurus) ─────────────────────── */
@@ -67,15 +72,90 @@ a.benefits-bar__text:hover {
 /* ── Lineas delicadas: esquinas suavizadas en vez de cuadradas ── */
 .button,
 .form__field,
-.product-item__image-wrapper,
-.aspect-ratio,
-.slideshow__bundled-image,
 .newsletter__form .form__field,
 .footer__newsletter-form .form__field {
   border-radius: var(--cs-radius);
 }
 
+.product-item__image-wrapper,
+.aspect-ratio,
+.slideshow__bundled-image {
+  border-radius: var(--cs-radius-lg);
+}
+
 .aspect-ratio {
+  overflow: hidden;
+}
+
+/* ── Tarjetas de producto: estilo Aurus (blanco, borde dorado suave, sombra) ── */
+.product-item {
+  background: #FFFFFF;
+  border: 1px solid var(--cs-card-border);
+  border-radius: var(--cs-radius-lg);
+  box-shadow: var(--cs-card-shadow-soft);
+  transition: box-shadow 0.3s var(--cs-ease-out), border-color 0.3s ease;
+}
+
+.product-item:hover {
+  border-color: var(--cs-gold);
+  box-shadow: var(--cs-card-shadow);
+}
+
+.product-item::after {
+  content: none;
+}
+
+.product-list {
+  border-top: none;
+  border-bottom: none;
+}
+
+.product-item__label-list,
+.product-list--collection .product-item__label-list {
+  top: 26px;
+  left: 26px;
+}
+
+.product-item__label-list > .product-label {
+  border-radius: var(--cs-radius-pill);
+  padding: 5px 12px;
+}
+
+/* ── Categorias: fotos cuadradas redondeadas en vez de circulos ── */
+.collection-item__image-wrapper--rounded {
+  border-radius: var(--cs-radius-lg);
+}
+
+.collection-item__image-wrapper {
+  border: 1px solid var(--cs-card-border);
+  box-shadow: var(--cs-card-shadow-soft);
+  transition: box-shadow 0.3s var(--cs-ease-out), border-color 0.3s ease;
+}
+
+.collection-item:hover .collection-item__image-wrapper {
+  border-color: var(--cs-gold);
+  box-shadow: var(--cs-card-shadow);
+}
+
+/* ── Promotion blocks: mismo lenguaje de tarjeta curva ── */
+.promo-block {
+  border-radius: var(--cs-radius-lg);
+  border: 1px solid var(--cs-card-border);
+  box-shadow: var(--cs-card-shadow-soft);
+  overflow: hidden;
+  transition: box-shadow 0.3s var(--cs-ease-out), transform 0.3s var(--cs-ease-out);
+}
+
+.promo-block:hover {
+  box-shadow: var(--cs-card-shadow);
+  transform: translateY(-2px);
+}
+
+/* ── Nuestras Tiendas: tarjeta curva en vez de recuadro recto ── */
+.map {
+  border-radius: var(--cs-radius-lg);
+  border-color: var(--cs-card-border);
+  box-shadow: var(--cs-card-shadow-soft);
   overflow: hidden;
 }
 
