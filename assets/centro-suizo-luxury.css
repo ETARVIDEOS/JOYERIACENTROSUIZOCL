@@ -14,6 +14,56 @@
   --cs-radius: 3px;
 }
 
+/* ── Barra de beneficios (estilo Aurus) ─────────────────────── */
+.benefits-bar {
+  background: var(--secondary-background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.benefits-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 32px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.benefits-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.benefits-bar__icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.benefits-bar__text {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+a.benefits-bar__text:hover {
+  color: var(--cs-gold);
+}
+
+@media (max-width: 640px) {
+  .benefits-bar__list {
+    gap: 8px 16px;
+  }
+
+  .benefits-bar__text {
+    font-size: 11px;
+  }
+}
+
 /* ── Lineas delicadas: esquinas suavizadas en vez de cuadradas ── */
 .button,
 .form__field,

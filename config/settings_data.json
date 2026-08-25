@@ -458,6 +458,43 @@
         "settings": {
           "title": "Vistos recientemente"
         }
+      },
+      "benefits-bar": {
+        "type": "benefits-bar",
+        "blocks": {
+          "benefit-0": {
+            "type": "item",
+            "settings": {
+              "icon": "cs-boutique",
+              "text": "Retiro en nuestras 3 tiendas: Iquique y Arica",
+              "link": ""
+            }
+          },
+          "benefit-1": {
+            "type": "item",
+            "settings": {
+              "icon": "cs-shield-gem",
+              "text": "Oro 18K certificado",
+              "link": ""
+            }
+          },
+          "benefit-2": {
+            "type": "item",
+            "settings": {
+              "icon": "cs-loupe",
+              "text": "Atencion y asesoria personalizada",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "benefit-0",
+          "benefit-1",
+          "benefit-2"
+        ],
+        "settings": {
+          "show_section": true
+        }
       }
     },
     "content_for_index": [
