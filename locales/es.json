@@ -213,7 +213,7 @@
       "choose_options": "Escoger opción",
       "sold_out": "Agotado",
       "in_stock": "Disponible",
-      "discount_html": "Ahorrar {{savings}}",
+      "discount_html": "-{{savings}} Dcto.",
       "low_stock_with_quantity_count": {
         "one": "Solo queda {{count}} unidad",
         "other": "Solo quedan {{count}} unidades"
