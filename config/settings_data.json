@@ -499,6 +499,7 @@
       "nuestra-historia": {
         "type": "image-with-text",
         "settings": {
+          "image": "shopify://shop_images/WhatsApp_Image_2026-08-18_at_18.40.40_1.jpg",
           "image_position": "left",
           "image_width": 50,
           "title": "MÁS DE 45 AÑOS TRABAJANDO EL ORO",
@@ -840,14 +841,7 @@
       "resenas-clientes",
       "1542984842027",
       "nuestras-tiendas"
-    ],
-    "blocks": {
-      "16963237191767492405": {
-        "type": "shopify://apps/whatsapp-button/blocks/app-embed-block/96d80a63-e860-4262-a001-8b82ac4d00e6",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    ]
   },
   "presets": {
     "Metal": {
