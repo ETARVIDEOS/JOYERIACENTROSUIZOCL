@@ -147,7 +147,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/hero_tienda_pc.jpg",
-              "mobile_image": "shopify://shop_images/ABRIMOS_NUEVA_TIENDA_EN_IQUIQUE_1.png",
+              "mobile_image": "shopify://shop_images/2.png",
               "show_overlay": true,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
