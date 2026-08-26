@@ -44,7 +44,7 @@
     "show_discount": true,
     "discount_mode": "percentage",
     "product_price_position": "after_title",
-    "product_image_size": "natural",
+    "product_image_size": "tall",
     "show_color_swatch": false,
     "show_inventory_quantity": false,
     "low_inventory_threshold": 0,
@@ -345,22 +345,40 @@
       "product-template": {
         "type": "product-template",
         "settings": {
+          "show_vendor": true,
+          "show_sku": false,
+          "show_share_buttons": true,
+          "show_taxes_included": false,
           "selector_mode": "block",
           "color_mode": "color",
+          "show_quantity_selector": true,
+          "show_payment_button": true,
+          "image_size": "small",
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
           "zoom_effect": "outside",
           "carousel_effect": "fade",
+          "show_inventory_quantity": false,
           "low_inventory_threshold": 0,
+          "content_display_mode": "show_all_and_expand_description",
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "tab_page_3_handle": "",
+          "enable_reviews": false,
+          "show_reviews_badge": false,
           "trust_title": "Pago y Seguridad",
-          "custom_security_badge": ""
+          "show_payment_icons": true,
+          "show_shipping_estimator": true,
+          "shipping_estimator_default_country": "United States",
+          "show_refunds_policy": true
         }
       },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "heading": "Tambien te puede gustar"
+          "show_product_recommendations": true,
+          "heading": "Tambien te puede gustar",
+          "show_quick_buy": false
         }
       },
       "announcement-bar": {
@@ -600,6 +618,7 @@
       },
       "cwi-anillos-compromiso": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "anillos-de-compromiso",
           "products_count": 12,
@@ -633,7 +652,7 @@
         "type": "featured-collection",
         "settings": {
           "collection": "argollas-de-matrimonio",
-          "title": "ANILLOS DE COMPROMISO",
+          "title": "ARGOLLAS DE MATRIMONIO",
           "products_count": 12,
           "layout": "vertical",
           "stack_desktop": false,
@@ -690,6 +709,7 @@
       },
       "cwi-aros-adulto": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "aros-adulto",
           "products_count": 12,
@@ -780,6 +800,21 @@
           "button_text": "Ver Colección",
           "button_link": ""
         }
+      },
+      "collection_with_image_VKRYEK": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "anillos-de-compromiso",
+          "products_count": 12,
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
+          "title": "ANILLOS DE COMPROMISO",
+          "content": "El anillo que dirá que sí, en oro 18K con diamantes certificados.",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
@@ -793,14 +828,15 @@
       "slideshow-secundario",
       "cwi-aros-adulto",
       "featured_collection_AgKYpA",
+      "featured-product-2",
+      "collection_with_image_VKRYEK",
+      "featured-product",
       "collection_with_image_DDeUmN",
       "featured-collection-pulseras",
-      "featured-product",
       "cwi-colgantes",
       "nuestra-historia",
       "resenas-clientes",
       "orfebreria",
-      "featured-product-2",
       "nuestras-tiendas",
       "1542984842027"
     ]
