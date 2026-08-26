@@ -143,19 +143,19 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-2": {
+          "slide-0": {
             "type": "image",
             "settings": {
               "show_overlay": true,
-              "overlay_opacity": 45,
+              "overlay_opacity": 55,
               "text_color": "#ffffff",
-              "title": "ABRIMOS NUEVA TIENDA EN IQUIQUE",
-              "content": "Almirante Latorre 708 — Te esperamos con toda nuestra joyería",
-              "content_position": "bottom_center",
+              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
+              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
+              "content_position": "middle_center",
               "button_background": "#c8a84b",
               "button_text_color": "#080809",
-              "button_text": "VER NUESTRAS TIENDAS",
-              "link": "#shopify-section-nuestras-tiendas"
+              "button_text": "VER COLECCIÓN",
+              "link": "shopify://collections/all"
             }
           },
           "slide-1": {
@@ -173,26 +173,26 @@
               "link": "shopify://collections/all"
             }
           },
-          "slide-0": {
+          "slide-2": {
             "type": "image",
             "settings": {
               "show_overlay": true,
-              "overlay_opacity": 55,
+              "overlay_opacity": 45,
               "text_color": "#ffffff",
-              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
-              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
-              "content_position": "middle_center",
+              "title": "ABRIMOS NUEVA TIENDA EN IQUIQUE",
+              "content": "Almirante Latorre 708 — Te esperamos con toda nuestra joyería",
+              "content_position": "bottom_center",
               "button_background": "#c8a84b",
               "button_text_color": "#080809",
-              "button_text": "VER COLECCIÓN",
-              "link": "shopify://collections/all"
+              "button_text": "VER NUESTRAS TIENDAS",
+              "link": "#shopify-section-nuestras-tiendas"
             }
           }
         },
         "block_order": [
-          "slide-2",
+          "slide-0",
           "slide-1",
-          "slide-0"
+          "slide-2"
         ],
         "settings": {
           "edge_to_edge": true,
@@ -469,7 +469,7 @@
             "type": "item",
             "settings": {
               "icon": "cs-boutique",
-              "title": "DOS TIENDAS FÍSICAS",
+              "title": "TRES TIENDAS FÍSICAS",
               "content": "<p>Visítanos en Iquique y Arica</p>"
             }
           }
@@ -739,6 +739,7 @@
       },
       "cwi-colgantes": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "colgantes",
           "products_count": 12,
@@ -831,14 +832,14 @@
       "featured-product-2",
       "collection_with_image_VKRYEK",
       "featured-product",
-      "collection_with_image_DDeUmN",
       "featured-collection-pulseras",
       "cwi-colgantes",
+      "orfebreria",
+      "collection_with_image_DDeUmN",
       "nuestra-historia",
       "resenas-clientes",
-      "orfebreria",
-      "nuestras-tiendas",
-      "1542984842027"
+      "1542984842027",
+      "nuestras-tiendas"
     ],
     "blocks": {
       "16963237191767492405": {
