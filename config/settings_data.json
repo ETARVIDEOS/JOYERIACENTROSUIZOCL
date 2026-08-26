@@ -469,7 +469,7 @@
             "type": "item",
             "settings": {
               "icon": "cs-boutique",
-              "title": "DOS TIENDAS FÍSICAS",
+              "title": "TRES TIENDAS FÍSICAS",
               "content": "<p>Visítanos en Iquique y Arica</p>"
             }
           }
@@ -739,6 +739,7 @@
       },
       "cwi-colgantes": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "colgantes",
           "products_count": 12,
@@ -831,14 +832,14 @@
       "featured-product-2",
       "collection_with_image_VKRYEK",
       "featured-product",
-      "collection_with_image_DDeUmN",
       "featured-collection-pulseras",
       "cwi-colgantes",
+      "orfebreria",
+      "collection_with_image_DDeUmN",
       "nuestra-historia",
       "resenas-clientes",
-      "orfebreria",
-      "nuestras-tiendas",
-      "1542984842027"
+      "1542984842027",
+      "nuestras-tiendas"
     ]
   },
   "presets": {
