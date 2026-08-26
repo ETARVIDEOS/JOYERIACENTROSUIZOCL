@@ -161,11 +161,13 @@
           "slide-2": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/hero_tienda_pc.jpg",
+              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_e0pp2de0pp2de0pp.jpg",
               "show_overlay": true,
-              "overlay_opacity": 45,
+              "overlay_opacity": 0,
               "text_color": "#ffffff",
-              "title": "ABRIMOS NUEVA TIENDA EN IQUIQUE",
-              "content": "Almirante Latorre 708 — Te esperamos con toda nuestra joyería",
+              "title": "",
+              "content": "",
               "content_position": "bottom_center",
               "button_background": "#c8a84b",
               "button_text_color": "#080809",
