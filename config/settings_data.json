@@ -143,6 +143,23 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
+          "slide-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/hero_tienda_pc.jpg",
+              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_yzgszlyzgszlyzgs.jpg",
+              "show_overlay": true,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "bottom_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "VER NUESTRAS TIENDAS",
+              "link": "#shopify-section-nuestras-tiendas"
+            }
+          },
           "slide-1": {
             "type": "image",
             "settings": {
@@ -156,23 +173,6 @@
               "button_text_color": "#080809",
               "button_text": "CONÓCENOS",
               "link": "shopify://collections/all"
-            }
-          },
-          "slide-2": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/hero_tienda_pc.jpg",
-              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_e0pp2de0pp2de0pp.jpg",
-              "show_overlay": true,
-              "overlay_opacity": 0,
-              "text_color": "#ffffff",
-              "title": "",
-              "content": "",
-              "content_position": "bottom_center",
-              "button_background": "#c8a84b",
-              "button_text_color": "#080809",
-              "button_text": "VER NUESTRAS TIENDAS",
-              "link": "#shopify-section-nuestras-tiendas"
             }
           },
           "slide-0": {
@@ -192,8 +192,8 @@
           }
         },
         "block_order": [
-          "slide-1",
           "slide-2",
+          "slide-1",
           "slide-0"
         ],
         "settings": {
