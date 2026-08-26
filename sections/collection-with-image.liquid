@@ -20,23 +20,31 @@
   {%- endcase -%}
 {%- endif -%}
 
+{%- if section.settings.image -%}
+  {%- assign cs_cwi_photo_url = section.settings.image | img_url: '1200x' -%}
+{%- else -%}
+  {%- assign cs_cwi_photo_url = cs_bundled_cwi_bg -%}
+{%- endif -%}
+
 <section class="section" data-section-id="{{ section.id }}" data-section-type="featured-collection" data-section-settings='{{ section_settings }}'>
   <div class="container container--flush">
     {%- assign collection = collections[section.settings.collection] -%}
 
-    <div class="featured-collection lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--lap]"{% elsif cs_bundled_cwi_bg != blank %}data-bg="{{ cs_bundled_cwi_bg }}"{% endif %}>
-      <header class="featured-collection__header lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--tablet]"{% elsif cs_bundled_cwi_bg != blank %}data-bg="{{ cs_bundled_cwi_bg }}"{% endif %}>
-        {%- if section.settings.title != blank -%}
-          <h2 class="featured-collection__title heading h2">{{ section.settings.title | escape }}</h2>
-        {%- endif -%}
+    <div class="featured-collection">
+      <header class="featured-collection__header featured-collection__header--photo-tile">
+        <div class="featured-collection__overlay">
+          {%- if section.settings.title != blank -%}
+            <h2 class="featured-collection__title heading h2">{{ section.settings.title | escape }}</h2>
+          {%- endif -%}
 
-        {%- if section.settings.content != blank -%}
-          <p class="featured-collection__text">{{ section.settings.content | escape | newline_to_br }}</p>
-        {%- endif -%}
+          {%- if section.settings.content != blank -%}
+            <p class="featured-collection__text">{{ section.settings.content | escape | newline_to_br }}</p>
+          {%- endif -%}
 
-        {%- if section.settings.button_text != blank -%}
-          <a href="{{ section.settings.button_link | default: collection.url | default: '#' }}" class="featured-collection__cta button button--floating">{{ section.settings.button_text | escape }}</a>
-        {%- endif -%}
+          {%- if section.settings.button_text != blank -%}
+            <a href="{{ section.settings.button_link | default: collection.url | default: '#' }}" class="featured-collection__cta button button--floating">{{ section.settings.button_text | escape }}</a>
+          {%- endif -%}
+        </div>
       </header>
 
       <div class="featured-collection__content">
@@ -70,6 +78,15 @@
   #shopify-section-{{ section.id }} .featured-collection__header {
     color: {{ section.settings.text_color }};
   }
+
+  {%- if cs_cwi_photo_url != blank -%}
+  #shopify-section-{{ section.id }} .featured-collection__header--photo-tile {
+    background-image: url({{ cs_cwi_photo_url }}) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  {%- endif -%}
 
   #shopify-section-{{ section.id }} .button {
     color: {{ section.settings.button_text_color }};

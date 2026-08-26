@@ -170,6 +170,45 @@ a.benefits-bar__text:hover {
   transform: translateY(-2px);
 }
 
+/* ── Collection with image: foto de categoria a pantalla completa con
+   titulo superpuesto (estilo Aurus) en vez del pequeño acento decorativo
+   que trae el tema por defecto (500px asomando en la esquina). ── */
+.featured-collection__header--photo-tile {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  min-height: 360px;
+  border-radius: var(--cs-radius-lg);
+}
+
+.featured-collection__header--photo-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(to top, rgba(8, 8, 9, 0.75) 0%, rgba(8, 8, 9, 0.25) 45%, rgba(8, 8, 9, 0) 70%);
+}
+
+.featured-collection__overlay {
+  position: relative;
+  z-index: 1;
+  padding: 28px;
+  width: 100%;
+}
+
+.featured-collection__header--photo-tile .featured-collection__title,
+.featured-collection__header--photo-tile .featured-collection__text {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 1000px) {
+  .featured-collection__header--photo-tile {
+    min-height: 100%;
+  }
+}
+
 /* ── Nuestras Tiendas: tarjeta curva en vez de recuadro recto ── */
 .map {
   border-radius: var(--cs-radius-lg);
