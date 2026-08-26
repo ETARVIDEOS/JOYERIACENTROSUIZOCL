@@ -101,6 +101,17 @@ a.benefits-bar__text:hover {
   box-shadow: var(--cs-card-shadow);
 }
 
+/* theme.css deja solo un borde derecho (divisor) en los scrollers de
+   "Collection with image" — igualamos especificidad para que ahi tambien
+   se vea la tarjeta completa en vez de una sola linea recta. */
+.featured-collection .product-item {
+  border: 1px solid var(--cs-card-border);
+}
+
+.featured-collection .product-item:hover {
+  border-color: var(--cs-gold);
+}
+
 .product-item::after {
   content: none;
 }
