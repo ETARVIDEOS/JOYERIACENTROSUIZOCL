@@ -24,8 +24,8 @@
   <div class="container container--flush">
     {%- assign collection = collections[section.settings.collection] -%}
 
-    <div class="featured-collection lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--lap]"{% elsif cs_bundled_cwi_bg != blank %}data-bgset="{{ cs_bundled_cwi_bg }} [--lap]"{% endif %}>
-      <header class="featured-collection__header lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--tablet]"{% elsif cs_bundled_cwi_bg != blank %}data-bgset="{{ cs_bundled_cwi_bg }} [--tablet]"{% endif %}>
+    <div class="featured-collection lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--lap]"{% elsif cs_bundled_cwi_bg != blank %}data-bg="{{ cs_bundled_cwi_bg }}"{% endif %}>
+      <header class="featured-collection__header lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--tablet]"{% elsif cs_bundled_cwi_bg != blank %}data-bg="{{ cs_bundled_cwi_bg }}"{% endif %}>
         {%- if section.settings.title != blank -%}
           <h2 class="featured-collection__title heading h2">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
