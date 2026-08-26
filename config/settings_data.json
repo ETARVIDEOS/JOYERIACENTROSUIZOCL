@@ -143,21 +143,6 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-0": {
-            "type": "image",
-            "settings": {
-              "show_overlay": true,
-              "overlay_opacity": 55,
-              "text_color": "#ffffff",
-              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
-              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
-              "content_position": "middle_center",
-              "button_background": "#c8a84b",
-              "button_text_color": "#080809",
-              "button_text": "VER COLECCIÓN",
-              "link": "shopify://collections/all"
-            }
-          },
           "slide-1": {
             "type": "image",
             "settings": {
@@ -187,12 +172,27 @@
               "button_text": "VER NUESTRAS TIENDAS",
               "link": "#shopify-section-nuestras-tiendas"
             }
+          },
+          "slide-0": {
+            "type": "image",
+            "settings": {
+              "show_overlay": true,
+              "overlay_opacity": 55,
+              "text_color": "#ffffff",
+              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
+              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "VER COLECCIÓN",
+              "link": "shopify://collections/all"
+            }
           }
         },
         "block_order": [
-          "slide-0",
           "slide-1",
-          "slide-2"
+          "slide-2",
+          "slide-0"
         ],
         "settings": {
           "edge_to_edge": true,
