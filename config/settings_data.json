@@ -288,6 +288,32 @@
           "low_inventory_threshold": 0
         }
       },
+      "featured-product-2": {
+        "type": "featured-product",
+        "settings": {
+          "product": "cadena-bolitas",
+          "title": "OTRA PIEZA DESTACADA",
+          "link_title": "Ver detalles",
+          "link_url": "",
+          "show_vendor": true,
+          "show_sku": false,
+          "show_share_buttons": true,
+          "show_description": true,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "color_mode": "color",
+          "show_quantity_selector": true,
+          "show_reviews_badge": false,
+          "show_payment_button": true,
+          "image_size": "small",
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "zoom_effect": "outside",
+          "carousel_effect": "fade",
+          "show_inventory_quantity": false,
+          "low_inventory_threshold": 0
+        }
+      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -344,8 +370,8 @@
       "1542984811767": {
         "type": "featured-collection",
         "settings": {
-          "collection": "argollas-de-matrimonio",
-          "title": "PIEZAS DESTACADAS",
+          "collection": "anillos-con-diamantes",
+          "title": "ANILLOS CON DIAMANTES",
           "products_count": 12,
           "layout": "vertical",
           "stack_desktop": false,
@@ -560,18 +586,165 @@
           "map_style": "standard",
           "image": ""
         }
+      },
+      "cwi-anillos-compromiso": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "anillos-de-compromiso",
+          "products_count": 12,
+          "image": "",
+          "background": "#0F0D0A",
+          "text_color": "#FFFFFF",
+          "title": "ANILLOS DE COMPROMISO",
+          "content": "El anillo que dirá que sí, en oro 18K con diamantes certificados.",
+          "button_background": "#C8A84B",
+          "button_text_color": "#0F0D0A",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
+      },
+      "cwi-argollas-matrimonio": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "argollas-de-matrimonio",
+          "products_count": 12,
+          "image": "",
+          "background": "#0F0D0A",
+          "text_color": "#FFFFFF",
+          "title": "ARGOLLAS DE MATRIMONIO",
+          "content": "Selladas en oro 18K, para toda una vida.",
+          "button_background": "#C8A84B",
+          "button_text_color": "#0F0D0A",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
+      },
+      "featured-collection-bebe": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "aros-de-bebe",
+          "title": "AROS DE BEBÉ",
+          "products_count": 12,
+          "layout": "vertical",
+          "stack_desktop": false,
+          "show_quick_buy": false,
+          "link_title": "Ver todo",
+          "link_url": ""
+        }
+      },
+      "slideshow-secundario": {
+        "type": "slideshow",
+        "blocks": {
+          "slide-cadenas": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "show_overlay": true,
+              "overlay_opacity": 45,
+              "text_color": "#ffffff",
+              "title": "CADENAS DE ORO 18K",
+              "content": "Diseños clásicos que nunca pasan de moda",
+              "content_position": "middle_center",
+              "button_background": "#C8A84B",
+              "button_text_color": "#080809",
+              "button_text": "VER CADENAS",
+              "link": "shopify://collections/cadenas"
+            }
+          },
+          "slide-anillos": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "show_overlay": true,
+              "overlay_opacity": 45,
+              "text_color": "#ffffff",
+              "title": "ANILLOS PARA CADA OCASIÓN",
+              "content": "Amplia variedad en oro 18K",
+              "content_position": "middle_center",
+              "button_background": "#C8A84B",
+              "button_text_color": "#080809",
+              "button_text": "VER ANILLOS",
+              "link": "shopify://collections/anillos"
+            }
+          }
+        },
+        "block_order": [
+          "slide-cadenas",
+          "slide-anillos"
+        ],
+        "settings": {
+          "edge_to_edge": true,
+          "section_size": "medium",
+          "carousel_effect": "slide",
+          "autoplay": true,
+          "cycle_speed": 6
+        }
+      },
+      "cwi-aros-adulto": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "aros-adulto",
+          "products_count": 12,
+          "image": "",
+          "background": "#0F0D0A",
+          "text_color": "#FFFFFF",
+          "title": "AROS PARA ADULTO",
+          "content": "Argollas y colgantes en oro 18K, para el día a día.",
+          "button_background": "#C8A84B",
+          "button_text_color": "#0F0D0A",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
+      },
+      "featured-collection-pulseras": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "pulseras",
+          "title": "PULSERAS",
+          "products_count": 12,
+          "layout": "vertical",
+          "stack_desktop": false,
+          "show_quick_buy": false,
+          "link_title": "Ver todo",
+          "link_url": ""
+        }
+      },
+      "cwi-colgantes": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "colgantes",
+          "products_count": 12,
+          "image": "",
+          "background": "#0F0D0A",
+          "text_color": "#FFFFFF",
+          "title": "COLGANTES",
+          "content": "Piezas delicadas para llevar contigo lo que más quieres.",
+          "button_background": "#C8A84B",
+          "button_text_color": "#0F0D0A",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "text-with-icons",
-      "collection-list",
+      "cwi-anillos-compromiso",
       "1542984811767",
-      "nuestra-historia",
-      "orfebreria",
-      "resenas-clientes",
-      "nuestras-tiendas",
+      "cwi-argollas-matrimonio",
+      "featured-collection-bebe",
+      "slideshow-secundario",
+      "cwi-aros-adulto",
+      "featured-collection-pulseras",
       "featured-product",
+      "cwi-colgantes",
+      "nuestra-historia",
+      "resenas-clientes",
+      "orfebreria",
+      "featured-product-2",
+      "nuestras-tiendas",
       "1542984842027"
     ],
     "blocks": {

@@ -5,12 +5,27 @@
 }
 {%- endcapture -%}
 
+{%- comment -%} Fotos provisorias de Centro Suizo (HD Wix), subidas a Shopify Files. Reemplazar por section.settings.image cuando existan banners definitivos. {%- endcomment -%}
+{%- assign cs_bundled_cwi_bg = blank -%}
+{%- if section.settings.image == blank -%}
+  {%- case section.id -%}
+    {%- when 'cwi-anillos-compromiso' -%}
+      {%- assign cs_bundled_cwi_bg = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/cwi-anillos-compromiso.jpg' -%}
+    {%- when 'cwi-argollas-matrimonio' -%}
+      {%- assign cs_bundled_cwi_bg = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/cwi-argollas-matrimonio.jpg' -%}
+    {%- when 'cwi-aros-adulto' -%}
+      {%- assign cs_bundled_cwi_bg = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/cwi-aros-adulto.jpg' -%}
+    {%- when 'cwi-colgantes' -%}
+      {%- assign cs_bundled_cwi_bg = 'https://cdn.shopify.com/s/files/1/1066/7517/5505/files/cwi-colgantes.jpg' -%}
+  {%- endcase -%}
+{%- endif -%}
+
 <section class="section" data-section-id="{{ section.id }}" data-section-type="featured-collection" data-section-settings='{{ section_settings }}'>
   <div class="container container--flush">
     {%- assign collection = collections[section.settings.collection] -%}
 
-    <div class="featured-collection lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--lap]"{% endif %}>
-      <header class="featured-collection__header lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--tablet]"{% endif %}>
+    <div class="featured-collection lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--lap]"{% elsif cs_bundled_cwi_bg != blank %}data-bgset="{{ cs_bundled_cwi_bg }} [--lap]"{% endif %}>
+      <header class="featured-collection__header lazyload" {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: '1000x' }} [--tablet]"{% elsif cs_bundled_cwi_bg != blank %}data-bgset="{{ cs_bundled_cwi_bg }} [--tablet]"{% endif %}>
         {%- if section.settings.title != blank -%}
           <h2 class="featured-collection__title heading h2">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
