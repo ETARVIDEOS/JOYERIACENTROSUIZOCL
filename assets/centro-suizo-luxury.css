@@ -300,7 +300,22 @@ textarea:focus-visible {
 }
 
 .product-item:hover .product-item__primary-image {
-  transform: scale(1.045);
+  transform: scale(1.08);
+}
+
+/* El tema cambia a una "segunda foto" en hover (fade out/in). Si el
+   producto no tiene una segunda foto real, o el hover se queda pegado
+   en mobile (no hay mouse para "soltarlo"), la foto se ve como que
+   desaparece a un cuadro en blanco. Se desactiva ese cambio de imagen
+   y se deja solo el zoom de arriba sobre la misma foto. */
+.product-item__image-wrapper--with-secondary:hover .product-item__primary-image {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.product-item__image-wrapper--with-secondary:hover .product-item__secondary-image {
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 .product-item__info-inner a {
