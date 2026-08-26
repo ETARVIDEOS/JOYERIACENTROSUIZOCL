@@ -5,6 +5,14 @@
    por orden de cascada sin necesitar !important.
    ============================================================ */
 
+/* theme.css solo pone overflow-x:hidden en html, nunca en body —
+   si algun elemento nuevo se pasa del viewport en mobile, body se
+   convierte en el contenedor de scroll horizontal. Ambos deben tenerlo. */
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --cs-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --cs-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
