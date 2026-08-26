@@ -45,7 +45,7 @@
     "discount_mode": "percentage",
     "product_price_position": "after_title",
     "product_image_size": "tall",
-    "show_color_swatch": false,
+    "show_color_swatch": true,
     "show_inventory_quantity": false,
     "low_inventory_threshold": 0,
     "show_reviews_badge": false,
@@ -294,7 +294,7 @@
         "type": "featured-product",
         "settings": {
           "product": "cadena-bolitas",
-          "title": "OTRA PIEZA DESTACADA",
+          "title": "PIEZA DESTACADA",
           "link_title": "Ver detalles",
           "link_url": "",
           "show_vendor": true,
