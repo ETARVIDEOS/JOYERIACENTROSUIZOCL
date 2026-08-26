@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "heading_color": "#1A1A1A",
@@ -76,7 +85,6 @@
         "type": "header",
         "settings": {
           "enable_sticky_header": true,
-          "logo": "",
           "logo_max_width": 140,
           "mobile_logo_max_width": 100,
           "show_locale_selector": true,
@@ -135,55 +143,49 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-0": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "mobile_image": "",
-              "show_overlay": true,
-              "overlay_opacity": 55,
-              "text_color": "#ffffff",
-              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
-              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
-              "content_position": "middle_center",
-              "button_background": "#C8A84B",
-              "button_text_color": "#080809",
-              "button_text": "VER COLECCIÓN",
-              "link": "shopify://collections/all"
-            }
-          },
-          "slide-1": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "mobile_image": "",
-              "show_overlay": true,
-              "overlay_opacity": 55,
-              "text_color": "#ffffff",
-              "title": "MÁS DE 25 AÑOS DE TRADICIÓN",
-              "content": "JOYERÍA FINA EN IQUIQUE Y ARICA DESDE 1979",
-              "content_position": "middle_center",
-              "button_background": "#C8A84B",
-              "button_text_color": "#080809",
-              "button_text": "CONÓCENOS",
-              "link": "shopify://collections/all"
-            }
-          },
           "slide-2": {
             "type": "image",
             "settings": {
-              "image": "",
-              "mobile_image": "",
               "show_overlay": true,
               "overlay_opacity": 45,
               "text_color": "#ffffff",
               "title": "ABRIMOS NUEVA TIENDA EN IQUIQUE",
               "content": "Almirante Latorre 708 — Te esperamos con toda nuestra joyería",
               "content_position": "bottom_center",
-              "button_background": "#C8A84B",
+              "button_background": "#c8a84b",
               "button_text_color": "#080809",
               "button_text": "VER NUESTRAS TIENDAS",
               "link": "#shopify-section-nuestras-tiendas"
+            }
+          },
+          "slide-1": {
+            "type": "image",
+            "settings": {
+              "show_overlay": true,
+              "overlay_opacity": 55,
+              "text_color": "#ffffff",
+              "title": "MÁS DE 25 AÑOS DE TRADICIÓN",
+              "content": "JOYERÍA FINA EN IQUIQUE Y ARICA DESDE 1979",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "CONÓCENOS",
+              "link": "shopify://collections/all"
+            }
+          },
+          "slide-0": {
+            "type": "image",
+            "settings": {
+              "show_overlay": true,
+              "overlay_opacity": 55,
+              "text_color": "#ffffff",
+              "title": "EL ANILLO QUE DIRÁ QUE SÍ",
+              "content": "ORO 18K CON DIAMANTES CERTIFICADOS GIA",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "VER COLECCIÓN",
+              "link": "shopify://collections/all"
             }
           }
         },
@@ -317,12 +319,21 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
+          "show_collection_image": true,
+          "collapse_collection_description": false,
           "collection_image_size": "small",
+          "products_per_row": "4",
+          "default_products_per_page": 24,
           "default_view_layout": "grid",
           "show_quick_buy": "list",
           "show_quick_view": "list",
           "quick_links": "",
-          "filter_type": "tag"
+          "quick_links_show_products_count": true,
+          "show_filters": true,
+          "show_filter_color_swatch": true,
+          "filter_type": "tag",
+          "open_group_filters_mode": "all_closed",
+          "filter_group_order": ""
         }
       },
       "recently-viewed-products": {
@@ -342,8 +353,8 @@
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "tab_page_3_handle": "",
-          "custom_security_badge": "",
-          "trust_title": "Pago y Seguridad"
+          "trust_title": "Pago y Seguridad",
+          "custom_security_badge": ""
         }
       },
       "product-recommendations": {
@@ -357,7 +368,7 @@
         "settings": {
           "show_announcement": true,
           "background": "#080809",
-          "text_color": "#C8A84B",
+          "text_color": "#c8a84b",
           "text": "Joyería Centro Suizo — Oro 18K certificado desde 1979",
           "text_position": "center",
           "link": "",
@@ -369,6 +380,7 @@
       },
       "1542984811767": {
         "type": "featured-collection",
+        "disabled": true,
         "settings": {
           "collection": "anillos-con-diamantes",
           "title": "ANILLOS CON DIAMANTES",
@@ -469,7 +481,6 @@
       "nuestra-historia": {
         "type": "image-with-text",
         "settings": {
-          "image": "",
           "image_position": "left",
           "image_width": 50,
           "title": "MÁS DE 45 AÑOS TRABAJANDO EL ORO",
@@ -482,13 +493,12 @@
         "type": "custom-html",
         "settings": {
           "title": "LO QUE DICEN NUESTROS CLIENTES",
-          "html": "<style>\n  .cs-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }\n  .cs-reviews__card { background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 3px; padding: 28px 26px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 3px rgba(26,26,26,0.04); transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), border-color 0.4s ease, box-shadow 0.4s ease; }\n  .cs-reviews__card:hover { transform: translateY(-3px); border-color: #C8A84B; box-shadow: 0 10px 24px -8px rgba(200,168,75,0.25); }\n  .cs-reviews__stars { color: #C8A84B; letter-spacing: 2px; font-size: 15px; }\n  .cs-reviews__quote { color: #5C5850; font-size: 14px; line-height: 1.65; margin: 0; flex-grow: 1; }\n  .cs-reviews__author { color: #1A1A1A; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin: 0; font-weight: 600; }\n  .cs-reviews__source { color: #9B9080; font-size: 11px; margin: -10px 0 0 0; }\n  @media (max-width: 900px) { .cs-reviews { grid-template-columns: repeat(2, 1fr); } }\n  @media (max-width: 600px) { .cs-reviews { grid-template-columns: 1fr; } }\n</style>\n<div class=\"cs-reviews\">\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;La mejor joyer&iacute;a de la ciudad, sus joyas son exclusivas y hermosas, atendida por sus due&ntilde;os que son muy amables.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Myrna Bruna</p>\n    <p class=\"cs-reviews__source\">Google &middot; Local Guide, 25 opiniones</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;Llev&eacute; mi joya ya que la ten&iacute;a averiada y me qued&oacute; excelente. Un local acogedor y personal profesional, en especial el joyero y la se&ntilde;ora que atiende, muy atenta y jovial.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Miguelina Daldo Rivera</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;Muy buena atenci&oacute;n, variedad de joyas. Personal muy amable, especialmente la srta. Patricia.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Nicole Alejandra Meza</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;Me encanta Centro Suizo, la mejor atenci&oacute;n y las joyas m&aacute;s lindas de la ciudad.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Patricia Daldo</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;Muy recomendable. Excelentes joyas y buenos asesores.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Patricio Lazo D&iacute;az</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"cs-reviews__quote\">&ldquo;Muy lindas joyas y la atenci&oacute;n excelente.&rdquo;</p>\n    <p class=\"cs-reviews__author\">Henry Rivas</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n</div>\n"
+          "html": "<style>\n  .cs-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }\n  .cs-reviews__card { background: #FFFFFF; border: 1px solid #E5E0D8; border-radius: 3px; padding: 28px 26px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 3px rgba(26,26,26,0.04); transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), border-color 0.4s ease, box-shadow 0.4s ease; }\n  .cs-reviews__card:hover { transform: translateY(-3px); border-color: #C8A84B; box-shadow: 0 10px 24px -8px rgba(200,168,75,0.25); }\n  .cs-reviews__stars { color: #C8A84B; letter-spacing: 2px; font-size: 15px; }\n  .cs-reviews__quote { color: #5C5850; font-size: 14px; line-height: 1.65; margin: 0; flex-grow: 1; }\n  .cs-reviews__author { color: #1A1A1A; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin: 0; font-weight: 600; }\n  .cs-reviews__source { color: #9B9080; font-size: 11px; margin: -10px 0 0 0; }\n  @media (max-width: 900px) { .cs-reviews { grid-template-columns: repeat(2, 1fr); } }\n  @media (max-width: 600px) { .cs-reviews { grid-template-columns: 1fr; } }\n</style>\n<div class=\"cs-reviews\">\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“La mejor joyería de la ciudad, sus joyas son exclusivas y hermosas, atendida por sus dueños que son muy amables.”</p>\n    <p class=\"cs-reviews__author\">Myrna Bruna</p>\n    <p class=\"cs-reviews__source\">Google · Local Guide, 25 opiniones</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“Llevé mi joya ya que la tenía averiada y me quedó excelente. Un local acogedor y personal profesional, en especial el joyero y la señora que atiende, muy atenta y jovial.”</p>\n    <p class=\"cs-reviews__author\">Miguelina Daldo Rivera</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“Muy buena atención, variedad de joyas. Personal muy amable, especialmente la srta. Patricia.”</p>\n    <p class=\"cs-reviews__author\">Nicole Alejandra Meza</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“Me encanta Centro Suizo, la mejor atención y las joyas más lindas de la ciudad.”</p>\n    <p class=\"cs-reviews__author\">Patricia Daldo</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“Muy recomendable. Excelentes joyas y buenos asesores.”</p>\n    <p class=\"cs-reviews__author\">Patricio Lazo Díaz</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n  <div class=\"cs-reviews__card\">\n    <div class=\"cs-reviews__stars\">★★★★★</div>\n    <p class=\"cs-reviews__quote\">“Muy lindas joyas y la atención excelente.”</p>\n    <p class=\"cs-reviews__author\">Henry Rivas</p>\n    <p class=\"cs-reviews__source\">Google</p>\n  </div>\n</div>"
         }
       },
       "orfebreria": {
         "type": "image-with-text",
         "settings": {
-          "image": "",
           "image_position": "right",
           "image_width": 45,
           "title": "EL OFICIO DE LA ORFEBRERÍA",
@@ -500,7 +510,9 @@
       "static-recently-viewed-products": {
         "type": "static-recently-viewed-products",
         "settings": {
-          "title": "Vistos recientemente"
+          "show_section": true,
+          "title": "Vistos recientemente",
+          "show_quick_buy": false
         }
       },
       "benefits-bar": {
@@ -583,8 +595,7 @@
           "zoom": 15,
           "draggable_map": false,
           "show_map_controls": false,
-          "map_style": "standard",
-          "image": ""
+          "map_style": "standard"
         }
       },
       "cwi-anillos-compromiso": {
@@ -592,29 +603,28 @@
         "settings": {
           "collection": "anillos-de-compromiso",
           "products_count": 12,
-          "image": "",
-          "background": "#0F0D0A",
-          "text_color": "#FFFFFF",
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
           "title": "ANILLOS DE COMPROMISO",
           "content": "El anillo que dirá que sí, en oro 18K con diamantes certificados.",
-          "button_background": "#C8A84B",
-          "button_text_color": "#0F0D0A",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
           "button_text": "Ver Colección",
           "button_link": ""
         }
       },
       "cwi-argollas-matrimonio": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "argollas-de-matrimonio",
           "products_count": 12,
-          "image": "",
-          "background": "#0F0D0A",
-          "text_color": "#FFFFFF",
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
           "title": "ARGOLLAS DE MATRIMONIO",
           "content": "Selladas en oro 18K, para toda una vida.",
-          "button_background": "#C8A84B",
-          "button_text_color": "#0F0D0A",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
           "button_text": "Ver Colección",
           "button_link": ""
         }
@@ -622,12 +632,12 @@
       "featured-collection-bebe": {
         "type": "featured-collection",
         "settings": {
-          "collection": "aros-de-bebe",
-          "title": "AROS DE BEBÉ",
+          "collection": "argollas-de-matrimonio",
+          "title": "ANILLOS DE COMPROMISO",
           "products_count": 12,
           "layout": "vertical",
           "stack_desktop": false,
-          "show_quick_buy": false,
+          "show_quick_buy": true,
           "link_title": "Ver todo",
           "link_url": ""
         }
@@ -638,15 +648,13 @@
           "slide-cadenas": {
             "type": "image",
             "settings": {
-              "image": "",
-              "mobile_image": "",
               "show_overlay": true,
               "overlay_opacity": 45,
               "text_color": "#ffffff",
               "title": "CADENAS DE ORO 18K",
               "content": "Diseños clásicos que nunca pasan de moda",
               "content_position": "middle_center",
-              "button_background": "#C8A84B",
+              "button_background": "#c8a84b",
               "button_text_color": "#080809",
               "button_text": "VER CADENAS",
               "link": "shopify://collections/cadenas"
@@ -655,15 +663,13 @@
           "slide-anillos": {
             "type": "image",
             "settings": {
-              "image": "",
-              "mobile_image": "",
               "show_overlay": true,
               "overlay_opacity": 45,
               "text_color": "#ffffff",
               "title": "ANILLOS PARA CADA OCASIÓN",
               "content": "Amplia variedad en oro 18K",
               "content_position": "middle_center",
-              "button_background": "#C8A84B",
+              "button_background": "#c8a84b",
               "button_text_color": "#080809",
               "button_text": "VER ANILLOS",
               "link": "shopify://collections/anillos"
@@ -687,19 +693,19 @@
         "settings": {
           "collection": "aros-adulto",
           "products_count": 12,
-          "image": "",
-          "background": "#0F0D0A",
-          "text_color": "#FFFFFF",
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
           "title": "AROS PARA ADULTO",
           "content": "Argollas y colgantes en oro 18K, para el día a día.",
-          "button_background": "#C8A84B",
-          "button_text_color": "#0F0D0A",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
           "button_text": "Ver Colección",
           "button_link": ""
         }
       },
       "featured-collection-pulseras": {
         "type": "featured-collection",
+        "disabled": true,
         "settings": {
           "collection": "pulseras",
           "title": "PULSERAS",
@@ -716,13 +722,61 @@
         "settings": {
           "collection": "colgantes",
           "products_count": 12,
-          "image": "",
-          "background": "#0F0D0A",
-          "text_color": "#FFFFFF",
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
           "title": "COLGANTES",
           "content": "Piezas delicadas para llevar contigo lo que más quieres.",
-          "button_background": "#C8A84B",
-          "button_text_color": "#0F0D0A",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
+          "button_text": "Ver Colección",
+          "button_link": ""
+        }
+      },
+      "static-promotion-list": {
+        "type": "static-promotion-list",
+        "settings": {
+          "expand_items": false,
+          "section_size": "medium",
+          "stack_mobile": false
+        }
+      },
+      "featured_collection_EBgrkP": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "aros-de-bebe",
+          "title": "AROS DE BEBÉ",
+          "products_count": 12,
+          "layout": "vertical",
+          "stack_desktop": false,
+          "show_quick_buy": true,
+          "link_title": "Ver todo",
+          "link_url": ""
+        }
+      },
+      "featured_collection_AgKYpA": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "aros-adulto",
+          "title": "AROS PARA ADULTO",
+          "products_count": 12,
+          "layout": "vertical",
+          "stack_desktop": false,
+          "show_quick_buy": true,
+          "link_title": "Ver todo",
+          "link_url": ""
+        }
+      },
+      "collection_with_image_DDeUmN": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "pulseras",
+          "products_count": 12,
+          "background": "#0f0d0a",
+          "text_color": "#ffffff",
+          "title": "PULSERAS",
+          "content": "Pulseras en oro 18K, para el día a día.",
+          "button_background": "#c8a84b",
+          "button_text_color": "#0f0d0a",
           "button_text": "Ver Colección",
           "button_link": ""
         }
@@ -731,12 +785,15 @@
     "content_for_index": [
       "slideshow",
       "text-with-icons",
-      "cwi-anillos-compromiso",
-      "1542984811767",
+      "featured_collection_EBgrkP",
       "cwi-argollas-matrimonio",
       "featured-collection-bebe",
+      "cwi-anillos-compromiso",
+      "1542984811767",
       "slideshow-secundario",
       "cwi-aros-adulto",
+      "featured_collection_AgKYpA",
+      "collection_with_image_DDeUmN",
       "featured-collection-pulseras",
       "featured-product",
       "cwi-colgantes",
@@ -746,14 +803,7 @@
       "featured-product-2",
       "nuestras-tiendas",
       "1542984842027"
-    ],
-    "blocks": {
-      "16963237191767492405": {
-        "type": "shopify://apps/whatsapp-button/blocks/app-embed-block/96d80a63-e860-4262-a001-8b82ac4d00e6",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    ]
   },
   "presets": {
     "Metal": {
