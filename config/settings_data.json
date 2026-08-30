@@ -192,11 +192,28 @@
               "link": "shopify://collections/all"
             }
           },
+          "image_JtJztq": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Gemini_Generated_Image_zcoycxzcoycxzcoy.jpg",
+              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_2.png",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#edece9",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/all"
+            }
+          },
           "image_RiYerm": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/4_PC.jpg",
-              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_1.png",
+              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_3.png",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
@@ -214,6 +231,7 @@
           "slide-2",
           "slide-1",
           "slide-0",
+          "image_JtJztq",
           "image_RiYerm"
         ],
         "settings": {
