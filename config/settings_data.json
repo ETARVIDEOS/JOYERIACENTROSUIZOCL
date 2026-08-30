@@ -738,8 +738,25 @@
               "link": "shopify://collections/cadenas"
             }
           },
+          "image_D9qFtL": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Gemini_Generated_Image_wnwcwuwnwcwuwnwc.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/anillos"
+            }
+          },
           "slide-anillos": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "show_overlay": true,
               "overlay_opacity": 45,
@@ -757,6 +774,7 @@
         "block_order": [
           "slide-cadenas",
           "image_KeUXNQ",
+          "image_D9qFtL",
           "slide-anillos"
         ],
         "settings": {
