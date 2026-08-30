@@ -707,6 +707,7 @@
         "blocks": {
           "slide-cadenas": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "show_overlay": true,
               "overlay_opacity": 45,
@@ -717,6 +718,23 @@
               "button_background": "#c8a84b",
               "button_text_color": "#080809",
               "button_text": "VER CADENAS",
+              "link": "shopify://collections/cadenas"
+            }
+          },
+          "image_KeUXNQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Diseno_sin_titulo_3_7ce27c7f-05d4-49d7-a8f1-5ec6988a2203.png",
+              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_4yw2oj4yw2oj4yw2.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
               "link": "shopify://collections/cadenas"
             }
           },
@@ -738,6 +756,7 @@
         },
         "block_order": [
           "slide-cadenas",
+          "image_KeUXNQ",
           "slide-anillos"
         ],
         "settings": {
