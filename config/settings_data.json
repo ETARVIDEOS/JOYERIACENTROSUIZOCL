@@ -721,6 +721,23 @@
               "link": "shopify://collections/cadenas"
             }
           },
+          "image_YyH8Ca": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Gemini_Generated_Image_7pedpw7pedpw7ped.jpg",
+              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_3_64605995-e52f-40dd-9751-4408ec1d55f6.png",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/anillos"
+            }
+          },
           "image_KeUXNQ": {
             "type": "image",
             "settings": {
@@ -755,23 +772,6 @@
               "link": "shopify://collections/anillos"
             }
           },
-          "image_YyH8Ca": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Gemini_Generated_Image_7pedpw7pedpw7ped.jpg",
-              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_3_64605995-e52f-40dd-9751-4408ec1d55f6.png",
-              "show_overlay": false,
-              "overlay_opacity": 0,
-              "text_color": "#ffffff",
-              "title": "",
-              "content": "",
-              "content_position": "middle_center",
-              "button_background": "#c8a84b",
-              "button_text_color": "#080809",
-              "button_text": "",
-              "link": "shopify://collections/anillos"
-            }
-          },
           "slide-anillos": {
             "type": "image",
             "disabled": true,
@@ -791,9 +791,9 @@
         },
         "block_order": [
           "slide-cadenas",
+          "image_YyH8Ca",
           "image_KeUXNQ",
           "image_D9qFtL",
-          "image_YyH8Ca",
           "slide-anillos"
         ],
         "settings": {
