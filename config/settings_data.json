@@ -811,6 +811,108 @@
           "button_text": "Ver Colección",
           "button_link": ""
         }
+      },
+      "slideshow-secundario": {
+        "type": "slideshow",
+        "blocks": {
+          "slide-cadenas": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "show_overlay": true,
+              "overlay_opacity": 45,
+              "text_color": "#ffffff",
+              "title": "CADENAS DE ORO 18K",
+              "content": "Diseños clásicos que nunca pasan de moda",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "VER CADENAS",
+              "link": "shopify://collections/cadenas"
+            }
+          },
+          "image_YyH8Ca": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Gemini_Generated_Image_7pedpw7pedpw7ped.jpg",
+              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_2h8fir2h8fir2h8f.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/anillos"
+            }
+          },
+          "image_KeUXNQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Diseno_sin_titulo_3_7ce27c7f-05d4-49d7-a8f1-5ec6988a2203.png",
+              "mobile_image": "shopify://shop_images/Gemini_Generated_Image_4yw2oj4yw2oj4yw2.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/cadenas"
+            }
+          },
+          "image_D9qFtL": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Diseno_sin_titulo_3_5d9f6308-158a-4ced-aab3-a80b8bbdeebf.png",
+              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_3_64605995-e52f-40dd-9751-4408ec1d55f6.png",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/anillos"
+            }
+          },
+          "slide-anillos": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "show_overlay": true,
+              "overlay_opacity": 45,
+              "text_color": "#ffffff",
+              "title": "ANILLOS PARA CADA OCASIÓN",
+              "content": "Amplia variedad en oro 18K",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "VER ANILLOS",
+              "link": "shopify://collections/anillos"
+            }
+          }
+        },
+        "block_order": [
+          "slide-cadenas",
+          "image_YyH8Ca",
+          "image_KeUXNQ",
+          "image_D9qFtL",
+          "slide-anillos"
+        ],
+        "settings": {
+          "edge_to_edge": true,
+          "section_size": "medium",
+          "carousel_effect": "slide",
+          "autoplay": true,
+          "cycle_speed": 3
+        }
       }
     },
     "content_for_index": [
@@ -821,6 +923,7 @@
       "featured-collection-bebe",
       "cwi-anillos-compromiso",
       "1542984811767",
+      "slideshow-secundario",
       "cwi-aros-adulto",
       "featured_collection_AgKYpA",
       "featured-product-2",
