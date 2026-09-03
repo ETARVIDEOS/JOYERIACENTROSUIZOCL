@@ -854,7 +854,24 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/2VV_6.png",
-              "mobile_image": "shopify://shop_images/Alta_Pinta.png",
+              "mobile_image": "shopify://shop_images/CENTRO_SUIZO_2.png",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#c8a84b",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/anillos"
+            }
+          },
+          "image_D9qFtL": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Copia_de_Alta_Pinta_1800_x_600_px.png",
+              "mobile_image": "shopify://shop_images/Copia_de_Alta_XCCCPinta.png",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
@@ -884,23 +901,6 @@
               "link": "shopify://collections/cadenas"
             }
           },
-          "image_D9qFtL": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Copia_de_Alta_Pinta_1800_x_600_px.png",
-              "mobile_image": "shopify://shop_images/Copia_de_Alta_XCCCPinta.png",
-              "show_overlay": false,
-              "overlay_opacity": 0,
-              "text_color": "#ffffff",
-              "title": "",
-              "content": "",
-              "content_position": "middle_center",
-              "button_background": "#c8a84b",
-              "button_text_color": "#080809",
-              "button_text": "",
-              "link": "shopify://collections/anillos"
-            }
-          },
           "slide-anillos": {
             "type": "image",
             "disabled": true,
@@ -921,8 +921,8 @@
         "block_order": [
           "slide-cadenas",
           "image_YyH8Ca",
-          "image_KeUXNQ",
           "image_D9qFtL",
+          "image_KeUXNQ",
           "slide-anillos"
         ],
         "settings": {
