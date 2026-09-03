@@ -212,10 +212,9 @@
           },
           "image_pFwymM": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/Gemini_Generated_Image_zcoycxzcoycxzcoy.jpg",
-              "mobile_image": "shopify://shop_images/Diseno_sin_titulo_2.png",
+              "image": "shopify://shop_images/2VV_4.png",
+              "mobile_image": "shopify://shop_images/5.png",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
