@@ -174,8 +174,8 @@
               "content_position": "bottom_center",
               "button_background": "#c8a84b",
               "button_text_color": "#080809",
-              "button_text": "VER NUESTRAS TIENDAS",
-              "link": ""
+              "button_text": "",
+              "link": "shopify://collections/anillos-de-compromiso"
             }
           },
           "slide-1": {
