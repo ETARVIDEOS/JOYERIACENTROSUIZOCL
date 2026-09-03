@@ -144,6 +144,23 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
+          "image_JtJztq": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/2VV_3.png",
+              "mobile_image": "shopify://shop_images/3_437f65e6-f000-4c03-9a54-092358ac4fa6.png",
+              "show_overlay": false,
+              "overlay_opacity": 0,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#edece9",
+              "button_text_color": "#080809",
+              "button_text": "",
+              "link": "shopify://collections/all"
+            }
+          },
           "slide-2": {
             "type": "image",
             "settings": {
@@ -193,23 +210,6 @@
               "link": "shopify://collections/all"
             }
           },
-          "image_JtJztq": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/2VV_3.png",
-              "mobile_image": "shopify://shop_images/3_437f65e6-f000-4c03-9a54-092358ac4fa6.png",
-              "show_overlay": false,
-              "overlay_opacity": 0,
-              "text_color": "#ffffff",
-              "title": "",
-              "content": "",
-              "content_position": "middle_center",
-              "button_background": "#edece9",
-              "button_text_color": "#080809",
-              "button_text": "",
-              "link": "shopify://collections/all"
-            }
-          },
           "image_pFwymM": {
             "type": "image",
             "settings": {
@@ -246,10 +246,10 @@
           }
         },
         "block_order": [
+          "image_JtJztq",
           "slide-2",
           "slide-1",
           "slide-0",
-          "image_JtJztq",
           "image_pFwymM",
           "image_RiYerm"
         ],
