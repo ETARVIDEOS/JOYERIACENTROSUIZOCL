@@ -427,7 +427,7 @@
           "show_reviews_badge": false,
           "trust_title": "Pago y Seguridad",
           "show_payment_icons": true,
-          "show_shipping_estimator": true,
+          "show_shipping_estimator": false,
           "shipping_estimator_default_country": "United States",
           "show_refunds_policy": true
         }
@@ -444,7 +444,7 @@
         "type": "announcement-bar",
         "settings": {
           "show_announcement": true,
-          "background": "#EDECE9",
+          "background": "#edece9",
           "text_color": "#c8a84b",
           "text": "Joyería Centro Suizo — Joyas desde 1979",
           "text_position": "center",
